@@ -43,7 +43,7 @@ updateSubscriberData();
 // Обработка кликов по аватарам
 $('.avatar').click(function() {
     // Переход на сайт приложения ВКонтакте
-    window.location.href = "https://vk.com/app52297614"; // Замените ссылку на ваше приложение
+    window.location.href = "https://vk.com/club41304908"; // Замените ссылку на ваше приложение
 });
 
 // Периодическое обновление данных

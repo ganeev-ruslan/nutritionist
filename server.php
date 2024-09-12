@@ -1,8 +1,8 @@
 <?php
 // Ключ API ВКонтакте
-$apiKey = "56a0d92556a0d92556a0d925e255bd2447556a056a0d92530421aa1ad26c594d9825d96";
+$apiKey = "vk1.a.xf0qoPIexi62adlobhpfOypx93spmAWVBiiINNfNgaAKx3N_TMqYy-bcfh5iJiJqshBMdQN2r1nnIL-qbIEOVSnSKaKLPw8KnDtvEjDzI4k0GkE7sW4KZYnQn85PKlfbbjAnJSTQIxQb332dRgH9Cc1j1NRXQ3S42QEX0wEZjTlp26QttWlskTDEwQF0XIy9vPSbb5G9LMXVd1rikJcsuQ";
 // ID группы ВКонтакте
-$groupId = "52297058";
+$groupId = "41304908";
 
 // Запрос к API ВКонтакте для получения информации о подписчиках
 $url = "https://api.vk.com/method/groups.getMembers?group_id=" . $groupId . "&access_token=" . $apiKey . "&fields=photo_200"; 

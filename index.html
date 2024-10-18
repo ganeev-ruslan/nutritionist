@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
-/>
-    <title>ДИЭТ</title>
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <title>Диетолог</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./fonts/stylesheet.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/global.css" />
@@ -32,7 +36,14 @@
               />
             </div>
             <div class="header-link_nutrition">
-              <img src="./images/Icon.svg" alt="мячик" />
+              <div>
+                <img
+                  src="./images/Icon.svg"
+                  alt="мячик"
+                  width="20"
+                  height="20"
+                />
+              </div>
               <p class="header-nutrition_program">
                 Получить бесплатную программу
               </p>
@@ -94,7 +105,7 @@
           </div>
         </div>
       </div>
-      <div class="mobile-menu">
+      <!-- <div class="mobile-menu">
         <div class="mobile-header-menu">
           <div class="mobile-menu-title">
             <a href="#" class="header-logo">
@@ -161,47 +172,662 @@
             </nav>
           </div>
         </div>
-      </div>
+      </div> -->
     </header>
-    <section class="s-banner">
-      <div>
-        <div class="banner-row">
-          <div class="banner-left">
-            <img src="./images/main_image.png" class="banner-image" alt="Girl">
-          </div>
-          <div class="banner-right">
-            <div class="banner-subtitle">
-              <p class="banner-subtitle_text">Преобразите своё ❤️ Здоровье</p>
+    <div class="page">
+      <section class="s-banner">
+        <div>
+          <div class="banner-row">
+            <div class="banner-left">
+              <img
+                src="./images/main_image.png"
+                class="banner-image"
+                alt="Тренер"
+                width="710"
+                height="712"
+              />
             </div>
-            <h1 class="banner-title">Постройте Тело Мечты
-            </h1>
-            <div class="banner-description">
-              Добро пожаловать в "Диетолог" - ваш надежный помощник на пути к
-              идеальному здоровью! Мы предлагаем индивидуальные консультации по
-              питанию от сертифицированных специалистов, готовых помочь вам
-              сбросить лишний вес и обрести желанную форму.
-            </div>
-            <div class="banner-btn">
-              <a href="#" class="banner-btn_start">Старт</a>
-              <a href="#" class="banner-btn-more">Узнать больше</a>
-            </div>
-
-            
-            <div class="widget">
-              <div class="counter">0</div>
-              <div class="avatars">
-                  <div class="avatar" data-id="1"></div>
-                  <div class="avatar" data-id="2"></div>
-                  <div class="avatar" data-id="3"></div>
+            <div class="banner-right">
+              <div class="banner-subtitle col">
+                <p class="banner-subtitle_text">Преобразите своё ❤️ Здоровье</p>
               </div>
-          </div>
-            
+              <h1 class="banner-title col">Постройте Тело Мечты</h1>
+              <div class="banner-description col">
+                <p class="paragraph_block">
+                  Добро пожаловать в "Диетолог" - ваш надежный помощник на пути
+                  к идеальному здоровью! Мы предлагаем индивидуальные
+                  консультации по питанию от сертифицированных специалистов,
+                  готовых помочь вам сбросить лишний вес и обрести желанную
+                  форму.
+                </p>
+              </div>
+              <div class="banner-btn col">
+                <a href="#" class="banner-btn_start">Старт</a>
+                <a href="#" class="banner-btn-more">Узнать больше</a>
+              </div>
+              <div class="subscribers col">
+                <div class="subscribers-block">
+                  <div class="subscriber-1">
+                    <img
+                      class="image-costumers"
+                      src="./images/custumers1.png"
+                      alt="подписчик"
+                    />
+                  </div>
+                  <div class="subscriber-2">
+                    <img
+                      class="image-costumers"
+                      src="./images/custumers2.png"
+                      alt="подписчик"
+                    />
+                  </div>
+                  <div class="subscriber-3">
+                    <img
+                      class="image-costumers"
+                      src="./images/custumers3.png"
+                      alt="подписчик"
+                    />
+                  </div>
+                </div>
+                <div class="happy-clients">
+                  <a href="https://vk.com/fitmethod" target="_blank"
+                    ><span>430+</span>&nbsp;Счастливые клиенты</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <footer></footer>
-    </section>
-    <script src="./js/jquery-3.7.1.min.js"></script>
+      </section>
+
+      <section class="features container">
+        <div class="features_block">
+          <h2 class="features_title">Особенности</h2>
+          <p class="paragraph_block">
+            Добро пожаловать в раздел Диетолог – здесь вы найдете всю
+            необходимую информацию о правильном питании. Вот что мы предлагаем:
+          </p>
+        </div>
+        <div class="grid-container_flex">
+          <div class="grid-container">
+            <div class="block">
+              <div class="block-gap">
+                <div class="flex-box">
+                  <img
+                    class="icon"
+                    src="./svg/Icon Container.svg"
+                    alt="цветок"
+                    width="54"
+                    height="54"
+                  />
+                  <h3>Персональный план питания</h3>
+                </div>
+                <div>
+                  <p>
+                    Получите план питания, специально разработанный для вашего
+                    тела и целей. Наши сертифицированные диетологи учтут ваши
+                    уникальные потребности, пищевые предпочтения и состояние
+                    здоровья, чтобы создать план, который идеально вам подойдет.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="block">
+              <div class="block-gap">
+                <div class="flex-box">
+                  <img
+                    class="icon"
+                    src="./svg/Icon Container1.svg"
+                    alt="ложка и вилка"
+                    width="54"
+                    height="54"
+                  />
+                  <h3>Отслеживание питания и анализ</h3>
+                </div>
+                <div>
+                  <p>
+                    Легко отслеживайте потребление пищи с помощью нашего
+                    удобного приложения. Наши диетологи проанализируют ваши
+                    данные, предоставят информацию о ваших привычках в питании,
+                    помогут выявить области для улучшения и предложат
+                    индивидуальные рекомендации.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="block">
+              <div class="block-gap">
+                <div class="flex-box">
+                  <img
+                    src="./svg/Icon Container2.svg"
+                    alt="гиря"
+                    width="54"
+                    height="54"
+                  />
+                  <h3>Коучинг по образу жизни и поведению</h3>
+                </div>
+                <div>
+                  <p>
+                    Достижение устойчивых результатов требует большего, чем
+                    просто плана питания. Наши диетологи будут работать с вами
+                    над развитием здоровых привычек, решать проблемы
+                    эмоционального питания и предоставлять стратегии для
+                    преодоления препятствий на пути.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="block">
+              <div class="block-gap">
+                <div class="flex-box">
+                  <img
+                    src="./svg/Icon Container3.svg"
+                    alt="шапка студента"
+                    width="54"
+                    height="54"
+                  />
+                  <h3>Руководство от сертифицированных диетологов</h3>
+                </div>
+                <div>
+                  <p>
+                    Наша команда опытных и сертифицированных диетологов
+                    предоставит профессиональное руководство и поддержку на
+                    протяжении всего вашего путешествия. Они ответят на ваши
+                    вопросы, рассмотрят ваши опасения и поддержат вашу
+                    мотивацию, пока вы работаете над достижением своих целей.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="block">
+              <div class="block-gap">
+                <div class="flex-box">
+                  <img
+                    src="./svg/Icon Container4.svg"
+                    alt="блокнот"
+                    width="54"
+                    height="54"
+                  />
+                  <h3>Планирование меню и рецепты</h3>
+                </div>
+                <div>
+                  <p>
+                    Получите доступ к обширной коллекции вкусных и полезных
+                    рецептов, адаптированных под ваши диетические потребности.
+                    Наши диетологи также разработают персонализированные планы
+                    питания, облегчая вам следование им и наслаждение
+                    питательными блюдами.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="block">
+              <div class="block-gap">
+                <div class="flex-box">
+                  <img
+                    src="./svg/Icon Container5.svg"
+                    alt="батарейка"
+                    width="54"
+                    height="54"
+                  />
+                  <h3>Образование в области питания и семинары</h3>
+                </div>
+                <div>
+                  <p>
+                    Расширьте свои знания о питании благодаря информативным
+                    статьям и образовательным семинарам. Наши диетологи оснастят
+                    вас знаниями и инструментами, необходимыми для принятия
+                    обоснованных решений для долгосрочного успеха.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features our_blogs container">
+        <div class="features_block">
+          <h2 class="features_title">Наш Блог</h2>
+          <p class="paragraph_block">
+            Наш блог является кладезем информативных и увлекательных статей,
+            написанных нашей командой диетологов, диетологов и экспертов в
+            области благополучия. Вот чего можно ожидать от нашего блога.
+          </p>
+        </div>
+        <div class="grid-cantainer2">
+          <div class="block block_padding">
+            <div class="block_pictures">
+              <img
+                class="block_pictures_img"
+                src="./images/Emely.png"
+                alt="картинка"
+                width="703"
+                height="428"
+              />
+            </div>
+            <div class="block_description">
+              <div>
+                <p>Потеря веса</p>
+                <h3>Польза гидратации для потери веса</h3>
+              </div>
+              <div>
+                <p>
+                  Узнайте, как поддержание водного баланса может способствовать
+                  достижению ваших целей по снижению веса и улучшению общего
+                  состояния здоровья.
+                </p>
+              </div>
+              <div class="block_article">
+                <div class="block_article_title">
+                  <img
+                    class="block_article_img"
+                    src="./svg/zoya_berber.svg"
+                    width="50"
+                    height="50"
+                    alt="фотография клиента"
+                  />
+                  <div class="">
+                    <h4>Зоя Бербер</h4>
+                    <p>
+                      23 Мая 2024 -
+                      <time datetime="2024-05-23">5 минут чтения</time>
+                    </p>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="block_article_image">
+                    <div class="block_image">
+                      <img src="./svg/heart.svg" alt="иконка сердце" />
+                    </div>
+                    <div class="block_image">
+                      <img src="./svg/bookmark.svg" alt="иконка закладки" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block block_padding">
+            <div class="block_pictures">
+              <img
+                class="block_pictures_img"
+                src="./images/sarah.png"
+                alt="картинка"
+                width="703"
+                height="428"
+              />
+            </div>
+            <div class="block_description">
+              <div>
+                <p>Осознанное питание</p>
+                <h3>Культивирование здорового отношения к еде</h3>
+              </div>
+              <div>
+                <p>
+                  Узнайте, как практика осознанного питания может помочь вам
+                  развить более здоровое отношение к еде и улучшить ваше общее
+                  самочувствие.
+                </p>
+              </div>
+            </div>
+            <div class="block_article">
+              <div class="block_article_title">
+                <img
+                  class="block_article_img"
+                  src="./svg/sara_thomson.svg"
+                  width="50"
+                  height="50"
+                  alt="фотография клиента"
+                />
+                <div class="">
+                  <h4>Сара Томсон</h4>
+                  <p>
+                    23 Мая 2024 -
+                    <time datetime="2024-05-23">5 минут чтения</time>
+                  </p>
+                </div>
+              </div>
+              <div class="">
+                <div class="block_article_image">
+                  <div class="block_image">
+                    <img src="./svg/heart.svg" alt="иконка сердце" />
+                  </div>
+                  <div class="block_image">
+                    <img src="./svg/bookmark.svg" alt="иконка закладки" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block block_padding">
+            <div class="block_pictures">
+              <img
+                class="block_pictures_img"
+                src="./images/Mark.png"
+                alt="картинка"
+                width="703"
+                height="428"
+              />
+            </div>
+            <div class="block_description">
+              <div>
+                <p>Понимание макронутриентов</p>
+                <h3>Углеводы, белки и жиры</h3>
+              </div>
+              <div>
+                <p>
+                  Получите всестороннее понимание макронутриентов и их роли в
+                  вашем рационе для оптимального здоровья и управления весом.
+                </p>
+              </div>
+            </div>
+            <div class="block_article">
+              <div class="block_article_title">
+                <img
+                  class="block_article_img"
+                  src="./svg/mark_wilson.svg"
+                  width="50"
+                  height="50"
+                  alt="фотография клиента"
+                />
+                <div class="">
+                  <h4>Герман Ратников</h4>
+                  <p>
+                    29 июня 2023 -
+                    <time datetime="2023-06-29">5 минут чтения</time>
+                  </p>
+                </div>
+              </div>
+              <div class="">
+                <div class="block_article_image">
+                  <div class="block_image">
+                    <img src="./svg/heart.svg" alt="иконка сердце" />
+                  </div>
+                  <div class="block_image">
+                    <img src="./svg/bookmark.svg" alt="иконка закладки" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block block_padding">
+            <div class="block_pictures">
+              <img
+                class="block_pictures_img"
+                src="./images/Nutritius.jpg"
+                alt="картинка"
+                width="703"
+                height="428"
+              />
+            </div>
+            <div class="block_description">
+              <div>
+                <p>Осознанное питание</p>
+                <h3>Культивирование здорового отношения к еде</h3>
+              </div>
+              <div>
+                <p>
+                  Узнайте, как практика осознанного питания может помочь вам
+                  развить более здоровое отношение к еде и улучшить ваше общее
+                  самочувствие.
+                </p>
+              </div>
+            </div>
+            <div class="block_article">
+              <div class="block_article_title">
+                <img
+                  class="block_article_img"
+                  src="./svg/emely.svg"
+                  width="50"
+                  height="50"
+                  alt="фотография клиента"
+                />
+                <div class="">
+                  <h4>Эмилия Вишневская</h4>
+                  <p>
+                    21 марта 2024 -
+                    <time datetime="2024-03-21">5 минут чтения</time>
+                  </p>
+                </div>
+              </div>
+              <div class="">
+                <div class="block_article_image">
+                  <div class="block_image">
+                    <img src="./svg/heart.svg" alt="иконка сердце" />
+                  </div>
+                  <div class="block_image">
+                    <img src="./svg/bookmark.svg" alt="иконка закладки" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features container">
+        <div class="features_block">
+          <h2 class="features_title">Наши отзывы</h2>
+          <p class="paragraph_block">
+            Наши довольные клиенты делятся своими историями успеха и опытом на
+            их пути к лучшему здоровью и благополучию.
+          </p>
+        </div>
+        <!-- карусель  -->
+        <div class="swiper gallery-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="review_block">
+                <div class="block_depiction">
+                  <img
+                    src="./svg/quotes.svg"
+                    width="40"
+                    height="40"
+                    alt="ковычки"
+                  />
+                  <p class="block_depiction__paragraph">
+                    Я боролась с лишним весом долгие годы, пока не нашла
+                    диетолога. Их индивидуальный подход и специально
+                    разработанная программа питания сделали огромную разницу. Я
+                    никогда не чувствовал себя лучше!
+                  </p>
+                </div>
+                <div class="customer_review">
+                  <img
+                    src="./svg/olga_karpina.svg"
+                    width="50"
+                    height="50"
+                    alt="клиент"
+                  />
+                  <h4>Ольга Карпина</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="review_block">
+                <div class="block_depiction">
+                  <img
+                    src="./svg/quotes.svg"
+                    width="40"
+                    height="40"
+                    alt="ковычки"
+                  />
+                  <p class="block_depiction__paragraph">
+                    "Диетолог" стал для меня настоящим прорывом. Экспертная
+                    поддержка и помощь их команды значительно облегчили мне
+                    процесс похудения. Спасибо!
+                  </p>
+                </div>
+                <div class="customer_review">
+                  <img
+                    src="./svg/robert_yanoff.svg"
+                    width="50"
+                    height="50"
+                    alt="клиент"
+                  />
+                  <h4>Роберт Янофф</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="review_block">
+                <div class="block_depiction">
+                  <img
+                    src="./svg/quotes.svg"
+                    width="40"
+                    height="40"
+                    alt="ковычки"
+                  />
+                  <p class="block_depiction__paragraph">
+                    Я хочу выразить свою благодарность диетологу за их
+                    индивидуальные консультации по питанию. Они полностью
+                    изменили мой подход к еде и помогли мне сбросить лишние
+                    килограммы. Настоятельно рекомендую!
+                  </p>
+                </div>
+                <div class="customer_review">
+                  <img
+                    src="./svg/sara_thomson.svg"
+                    width="50"
+                    height="50"
+                    alt="клиент"
+                  />
+                  <h4>Евгения Марьянова</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="review_block">
+                <div class="block_depiction">
+                  <img
+                    src="./svg/quotes.svg"
+                    width="40"
+                    height="40"
+                    alt="ковычки"
+                  />
+                  <p class="block_depiction__paragraph">
+                    Хочу выразить огромную благодарность команде диетологов за
+                    их профессиональный подход и персональные рекомендации по
+                    питанию. Благодаря им я добилась значительных результатов в
+                    потере веса.
+                  </p>
+                </div>
+                <div class="customer_review">
+                  <img
+                    class="customer_review_img"
+                    src="./images/Marina_Zenovieva.jpg"
+                    width="50"
+                    height="50"
+                    alt="клиент"
+                  />
+                  <h4>Марина Зеновьева</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="review_block">
+                <div class="block_depiction">
+                  <img
+                    src="./svg/quotes.svg"
+                    width="40"
+                    height="40"
+                    alt="ковычки"
+                  />
+                  <p class="block_depiction__paragraph">
+                    Советы по питанию оказались невероятно эффективными, я
+                    смогла достичь впечатляющих результатов в потере веса.
+                    Настоятельно рекомендую всем, кто ищет действенные методы
+                    для улучшения своего физического состояния.
+                  </p>
+                </div>
+                <div class="customer_review">
+                  <img
+                    class="customer_review_img"
+                    src="./images/Vera_Samoilova.jpg"
+                    width="50"
+                    height="50"
+                    alt="клиент"
+                  />
+                  <h4>Вера Самойлова</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="review_block">
+                <div class="block_depiction">
+                  <img
+                    src="./svg/quotes.svg"
+                    width="40"
+                    height="40"
+                    alt="ковычки"
+                  />
+                  <p class="block_depiction__paragraph">
+                    Огромное спасибо команде диетологов за их терпение, заботу и
+                    высокий уровень профессионализма. Их индивидуальные
+                    рекомендации по питанию сыграли ключевую роль в моей
+                    успешной борьбе с лишним весом.
+                  </p>
+                </div>
+                <div class="customer_review">
+                  <img
+                    class="customer_review_img"
+                    src="./images/Anton_Eremeev.jpg"
+                    width="50"
+                    height="50"
+                    alt="клиент"
+                  />
+                  <h4>Антон Еремеев</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery">
+            <div class="gallery-navigation">
+              <button class="button-gallery-btn gallery-btn_prev">
+                <svg
+                  width="49"
+                  height="48"
+                  viewBox="0 0 49 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use
+                    href="./svg/button_prew.svg#button_prew"
+                    class="btn_prev"
+                  ></use>
+                </svg>
+              </button>
+              <div class="gallery-pagination"></div>
+
+              <button
+                class="button-gallery-btn gallery-btn_next swiper-button-disabled"
+              >
+                <svg
+                  width="49"
+                  height="48"
+                  viewBox="0 0 49 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use
+                    href="./svg/button_next.svg#button_next"
+                    class="btn_next"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features container">
+        <div class="features_block">
+          <h2 class="features_title">Наши цены</h2>
+          <p class="paragraph_block">Мы представляем гибкие и доступные варианты, чтобы поддержать вас на вашем пути к оптимальному здоровью и питанию. Мы убеждены, что каждый заслуживает доступа к индивидуальным рекомендациям по питанию и ресурсам.</p>
+        </div>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
   </body>
 </html>

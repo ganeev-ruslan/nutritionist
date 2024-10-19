@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  
 }
 .container {
   max-width: 1280px;
@@ -301,11 +302,11 @@
   font-size: clamp(1.125rem, 1.0214rem + 0.442vw, 1.375rem);
   font-family: "Urbanist", sans-serif;
   font-weight: 600;
+  max-width: 380px;
   font-style: normal;
   text-align: center;
   border-bottom: 2px solid #cbf06d;
   line-height: 36px;
-  width: 340px;
 }
 
 .banner-title {
@@ -434,7 +435,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
   gap: 20px;
-  padding: 0px 20px 0px 20px;
+  
 }
 .block {
   background-color: #f6fbe9;
@@ -485,6 +486,7 @@
 .grid-container_flex {
   display: flex;
   justify-content: center;
+  padding: 0px 20px 0px 20px;
 }
 
 .block_pictures {

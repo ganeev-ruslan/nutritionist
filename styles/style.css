@@ -600,7 +600,7 @@
 .swiper-wrapper {
   display: flex;
   margin-block-end: 40px;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .button-gallery-btn {

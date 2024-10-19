@@ -5,6 +5,7 @@
 .container {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 20px 20px;
 }
 
 /* header Start  */
@@ -427,7 +428,7 @@
   flex-direction: column;
   text-align: center;
   gap: 20px;
-  padding: 0 20px 60px 20px;
+  padding-block-end: 60px;
 }
 
 .grid-container {
@@ -479,14 +480,13 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
   gap: 20px;
-  padding: 0px 20px 0px 20px;
   justify-content: center;
 }
 
 .grid-container_flex {
   display: flex;
   justify-content: center;
-  padding: 0px 20px 0px 20px;
+ 
 }
 
 .block_pictures {
@@ -596,9 +596,7 @@
   border-radius: 16px;
   justify-content: space-between;
 }
-.swiper {
-  padding: 0px 20px 0px 20px;
-}
+
 .swiper-wrapper {
   display: flex;
   margin-block-end: 40px;

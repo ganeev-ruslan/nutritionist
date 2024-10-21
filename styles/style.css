@@ -663,6 +663,110 @@
 }
 
 /* our_testimonials END*/
+
+
+
+
+/* Our Pricing Start */
+.button_switch_block {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+.button_switch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.monthly_color {
+  color: white;
+  background-color: #234338;
+  padding: 10px 24px;
+  border-radius: 6px;
+  border: none;
+  transition: background-color 0.4s ease;
+}
+
+.yearly_color {
+  color: black;
+  background-color: transparent;
+  padding: 10px 24px;
+  border-radius: 6px;
+  border: none;
+  transition: background-color 0.4s ease;
+}
+
+.btn {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 600;
+	line-height: 1.5;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button_switch_click {
+  border: 1px solid #DCF1A7;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+}
+.card {
+  display: flex;
+  max-width: 413px;
+  flex-direction: column;
+  background: #F6FBE9;
+  border: 1px solid #EEF8D3;
+  border-radius: 10px;
+  gap: 30px;
+  padding: 40px;
+}
+
+.card_price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.choose_button{
+  padding: 14px 0px;
+  border-radius: 6px;
+  background: #CBF06D;
+  border: none;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 40px;  
+  color: #2C5446;
+}
+
+.card_price__block{
+  display: flex;
+  align-items: center;
+}
+
+.card_price__block  p{
+  display: flex;
+  align-items: center; /* Центрируем содержимое "/месяц" вертикально */
+  justify-content: space-between; 
+  gap: 5px;
+}
+
+.card_block_paragraph{
+  height: 170px;
+}
+/* Our Pricing End */
+
+
 @media (width < 1275px) {
   .grid-cantainer2 {
     display: flex;
@@ -727,6 +831,16 @@
     padding-block-end: 0px;
   }
 }
+
+
+@media (width < 1150px){
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
 
 @media (min-width: 770px) {
   .hamburger {

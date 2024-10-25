@@ -796,6 +796,8 @@
 
 .header_bottom__block a {
   display: flex;
+  align-items: center;
+  gap: 2px;
   font-size: 16px;
   border: 1px solid #2C5446;
   border-radius: 4px;
@@ -821,6 +823,10 @@
   gap: 30px;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
 
 
 

@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  
 }
 .container {
   max-width: 1280px;
@@ -436,7 +435,6 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
   gap: 20px;
-  
 }
 .block {
   background-color: #f6fbe9;
@@ -486,7 +484,6 @@
 .grid-container_flex {
   display: flex;
   justify-content: center;
- 
 }
 
 .block_pictures {
@@ -664,16 +661,12 @@
 
 /* our_testimonials END*/
 
-
-
-
 /* Our Pricing Start */
 .button_switch_block {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-
 
 .button_switch {
   display: flex;
@@ -702,15 +695,15 @@
 }
 
 .btn {
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-weight: 600;
-	line-height: 1.5;
+  line-height: 1.5;
   font-size: 14px;
   cursor: pointer;
 }
 
 .button_switch_click {
-  border: 1px solid #DCF1A7;
+  border: 1px solid #dcf1a7;
   border-radius: 8px;
   padding: 10px;
 }
@@ -723,8 +716,8 @@
   display: flex;
   max-width: 413px;
   flex-direction: column;
-  background: #F6FBE9;
-  border: 1px solid #EEF8D3;
+  background: #f6fbe9;
+  border: 1px solid #eef8d3;
   border-radius: 10px;
   gap: 30px;
   padding: 40px;
@@ -736,37 +729,103 @@
   gap: 10px;
 }
 
-.choose_button{
+.choose_button {
   padding: 14px 0px;
   border-radius: 6px;
-  background-color: #CBF06D;
+  background-color: #cbf06d;
   border: none;
   color: #262626;
 }
 
 .price {
   font-weight: 700;
-  font-size: 40px;  
-  color: #2C5446;
+  font-size: 40px;
+  color: #2c5446;
 }
 
-.card_price__block{
+.card_price__block {
   display: flex;
   align-items: center;
 }
 
-.card_price__block  p{
+.card_price__block p {
   display: flex;
   align-items: center; /* Центрируем содержимое "/месяц" вертикально */
-  justify-content: space-between; 
+  justify-content: space-between;
   gap: 5px;
 }
 
-.card_block_paragraph{
+.card_block_paragraph {
   height: 170px;
 }
+
 /* Our Pricing End */
 
+
+/* footer Start */
+
+.footer{
+  background-color: #1A3129;
+}
+
+.footer_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-start: 40px;
+}
+
+.footer_block{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.arrow_up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.header_bottom__block{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header_bottom__block a {
+  display: flex;
+  font-size: 16px;
+  border: 1px solid #2C5446;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.header_bottom{
+  border: 1px solid #2C5446;;
+  border-radius: 8px;
+  padding: 12px;
+  margin-block-end: 40px;
+  background-color: #234338;
+  
+}
+
+.color_text {
+  color: #fff;
+}
+
+.block-menu_bottom {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+
+
+
+
+/* footer End */
 
 @media (width < 1275px) {
   .grid-cantainer2 {
@@ -833,8 +892,7 @@
   }
 }
 
-
-@media (width < 1150px){
+@media (width < 1150px) {
   .cards {
     flex-direction: column;
     align-items: center;
@@ -843,9 +901,31 @@
     height: fit-content;
   }
 
+  .footer_head {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer_head {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .logo_nutricionist{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-nav ul {
+    flex-wrap: wrap;
+    row-gap: 20px;
+
+
 }
 
-
+}
 
 @media (min-width: 770px) {
   .hamburger {
@@ -866,6 +946,19 @@
   .block-menu-nav {
     display: none;
   }
+}
+ 
+@media (width < 553px){
+  .header_bottom__block{
+    align-items: stretch;
+    flex-direction: column;
+
+  }
+
+  .header_bottom__block a{
+    justify-content: center;
+  }
+
 }
 
 @media (width < 546px) {
@@ -895,3 +988,5 @@
     left: 0;
   }
 }
+
+

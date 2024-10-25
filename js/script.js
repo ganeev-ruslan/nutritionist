@@ -53,3 +53,21 @@ document.addEventListener("DOMContentLoaded", function () {
     
   }
 });
+
+
+const block1 = document.querySelector('.logo_nutricionist');
+const block3 = document.querySelector('.arrow_up_block');
+
+function moveContent(){
+  if (window.matchMedia("(width<1150px)").matches){
+    while (block3.firstChild){
+      block1.appendChild(block3.firstChild)
+    }
+    block3.remove();
+  }
+}
+
+moveContent()
+window.addEventListener('resize', moveContent);
+
+

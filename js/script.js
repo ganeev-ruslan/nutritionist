@@ -1,4 +1,3 @@
-
 let swiper = new Swiper(".gallery-swiper", {
   slidesPerView: 1,
   spaceBetween: 20,
@@ -40,34 +39,15 @@ document.addEventListener("DOMContentLoaded", function () {
     changeButtonColor(monthlyButton);
   });
 
-
   function changeButtonColor(button) {
-    if (button.classList.contains('monthly_color')) {
-      button.classList.remove('monthly_color');
-      button.classList.add('yearly_color');
+    if (button.classList.contains("monthly_color")) {
+      button.classList.remove("monthly_color");
+      button.classList.add("yearly_color");
     } else {
-      button.classList.remove('yearly_color');
-      button.classList.add('monthly_color');
+      button.classList.remove("yearly_color");
+      button.classList.add("monthly_color");
     }
-
-    
   }
 });
 
-
-const block1 = document.querySelector('.logo_nutricionist');
-const block3 = document.querySelector('.arrow_up_block');
-
-function moveContent(){
-  if (window.matchMedia("(width<1150px)").matches){
-    while (block3.firstChild){
-      block1.appendChild(block3.firstChild)
-    }
-    block3.remove();
-  }
-}
-
-moveContent()
-window.addEventListener('resize', moveContent);
-
-
+// анимация при переходе на страницу

@@ -1,6 +1,6 @@
 // плавное открытие страниц
 
-document.querySelectorAll('a').forEach(link => {
+document.querySelectorAll('active').forEach(link => {
     link.addEventListener('click', function(event) {
         event.preventDefault(); // Отменяет стандартное поведение ссылки
   

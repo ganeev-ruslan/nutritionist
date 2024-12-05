@@ -1,6 +1,6 @@
 // плавное открытие страниц
 
-document.querySelectorAll('active').forEach(link => {
+document.querySelectorAll('li a').forEach(link => {
     link.addEventListener('click', function(event) {
         event.preventDefault(); // Отменяет стандартное поведение ссылки
   
@@ -59,3 +59,58 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('.btn-command');
+  const imageContainers = document.querySelectorAll('.image-container');
+
+  buttons.forEach(button => {
+      button.addEventListener('click', function() {
+          // Удаляем класс active у всех кнопок
+          buttons.forEach(btn => btn.classList.remove('active'));
+          // Добавляем класс active к текущей кнопке
+          this.classList.add('active');
+
+          // Получаем категорию из data-атрибута
+          const category = this.getAttribute('data-category');
+
+          // Скрываем все контейнеры с изображениями
+          imageContainers.forEach(container => {
+              if (container.classList.contains(category)) {
+                  container.style.display = 'flex'; // Показываем контейнер с нужной категорией
+              } else {
+                  container.style.display = 'none'; // Скрываем остальные
+              }
+          });
+      });
+  });
+});
+
+let swiper = new Swiper(".gallery-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".gallery-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".gallery-btn_next",
+      prevEl: ".gallery-btn_prev",
+    },
+    
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+  });

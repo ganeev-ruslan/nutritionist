@@ -1,3 +1,7 @@
+/* * {
+  outline: 1px solid red;
+} */
+
 .header {
   display: flex;
   flex-direction: column;
@@ -18,6 +22,8 @@
 
 .square {
   display: flex;
+  background-color: #1a3129;
+  border-radius: 8px;
 }
 
 .squares__block_img {
@@ -53,6 +59,7 @@
 }
 
 .block-description {
+  padding: 0px 60px;
   font-family: "Urbanist", sans-serif;
   font-weight: 500;
   text-align: center;
@@ -68,15 +75,266 @@
 
 /* Our Story START */
 .section {
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 
-.block_title_gap{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+.square_img-stories {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
+.block_title_gap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.border-top-left {
+  border-top-left-radius: 12px;
+}
+
+.border-bottom-right {
+  border-bottom-right-radius: 12px;
+}
 /* Our Story END */
+
+.grid_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Две колонки */
+  background-color: #cbf06d;
+  column-gap: 12px; /* Промежуток между колонками */
+  row-gap: 0; /* Убираем промежуток между рядами */
+  border: 1px solid #eef8d3;
+  border-radius: 12px;
+}
+.item {
+  display: flex;
+  background-color: #f6fbe9;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+.item-right {
+  border-top-right-radius: 11px;
+}
+
+.item-left-bottom{
+  border-bottom-left-radius: 11px;
+}
+
+.item-border-bottom {
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius:11px;
+
+}
+
+.item-picture {
+  display: flex;
+  background-color: #f6fbe9;
+  border-radius: 11px;
+}
+
+.item-left {
+  display: flex;
+  align-items: flex-end;
+}
+
+.item-left p {
+  text-align: end;
+}
+
+/* Company Achievements START */
+
+.grid-container-block {
+  display: grid;
+  gap: 20px;
+}
+
+.achievements-block {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-items: end;
+  padding: 60px;
+  background-color: #f6fbe9;
+  border-radius: 10px;
+  border: 1px solid #e5f5bd;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievements {
+  padding-block-end: 100px;
+}
+
+.achievements-block-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+}
+
+.achievements-btn {
+  background-color: #cbf06d;
+  border: none;
+  cursor: pointer;
+  padding: 14px 20px;
+  border-radius: 6px;
+  transition: background-color 0.35s ease, transform 0.1s ease-in-out;
+}
+
+.achievements-btn:hover {
+  background-color: #b9d869;
+  color: inherit;
+}
+
+.achievements-btn:active {
+  transform: translate(1px, 1px);
+}
+
+.btn-txt {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.achievements-block-img {
+  position: absolute;
+  top: -40px;
+  left: -70px;
+}
+
+.achievements-logo-svg {
+  position: absolute;
+  top: 170px;
+  right: -20px;
+}
+
+.square-flex {
+  width: 100%;
+  max-width: 634px;
+}
+
+.flex-container {
+  display: none;
+}
+
+.achievements-btn-pos {
+  z-index: 1;
+}
+
+/* Company Achievements END */
+
+@media (width < 1068px) and (width > 780px) {
+  .flex-box {
+    align-items: flex-start;
+  }
+}
+
+@media (width < 1008px) {
+  .achievements-logo-svg {
+    top: 210px;
+  }
+}
+
+@media (max-width: 890px) {
+  .grid_container {
+    display: none;
+  }
+}
+
+@media (max-width: 890px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #cbf06d;
+    border: 1px solid #cbf06d;
+    border-radius: 12px;
+    gap: 20px;
+  }
+}
+@media (width<=890px) {
+  .square_img-radius {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  .squares__block_img,
+  .squares__block {
+    gap: 5px;
+  }
+
+  .header,
+  .section__blocks {
+    gap: 50px;
+  }
+  .section_two-description,
+  .achievements-block {
+    padding: 50px;
+  }
+  
+}
+
+@media (width < 752px) {
+  .section_two-description {
+    gap: 30px;
+  }
+
+  .achievements-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .achievements-logo-svg {
+    top: 190px;
+  }
+
+  .section_two-description,
+  .achievements-block {
+    padding: 30px;
+  }
+  .block-description {
+    padding: 0 30px;
+  }
+
+  .achievements {
+    padding-block-end: 60px;
+  }
+
+  .flex-container {
+    gap: 10px;
+  }
+}
+
+@media (width > 779px) {
+  .grid-container-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (width < 519px) {
+  .flex-box-position {
+    align-items: flex-start;
+  }
+}
+
+@media (width < 393px) {
+  .section_two-description,
+  .item,
+  .achievements-block,
+  .block-gap
+   {
+    padding: 10px;
+  }
+  .container {
+    padding: 0 10px;
+  }
+  .block-description{
+    padding: 0 10px;
+  }
+}

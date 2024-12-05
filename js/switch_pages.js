@@ -1,4 +1,4 @@
-// плавное открытие страниц
+
 
 document.querySelectorAll('li a').forEach(link => {
     link.addEventListener('click', function(event) {
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-let swiper = new Swiper(".gallery-swiper", {
+let swiper = new Swiper(".another-gallery-swiper", {
     slidesPerView: 1,
     spaceBetween: 10,
     pagination: {

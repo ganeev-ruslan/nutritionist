@@ -1,0 +1,22 @@
+.block-command-price{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-txt-price {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.card_block_paragraph-price {
+    display: flex;
+    flex-direction: column;
+    background-color: #EEF8D3;
+}
+
+.card_block_paragraph-price p {
+    padding: 16px 20px;
+}

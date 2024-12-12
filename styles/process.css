@@ -1,0 +1,33 @@
+.process-block {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-block-start: 80px;
+}
+
+.block-number{
+    font-size: 100px;
+    line-height: 100px; 
+    font-weight: bold;
+    color: #468671;
+    position: relative;
+    top: 30px;
+    z-index: -1
+    ; 
+}
+
+.achievements-block {
+    margin-block-end: 100px;
+}
+
+
+@media (width < 752px) {
+    .achievements-block {
+        margin-block-end: 60px;
+    }
+
+    .process-block {
+        margin-block-start: 60px;
+        
+    }
+}

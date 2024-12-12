@@ -168,7 +168,7 @@
 }
 
 .achievements {
-  padding-block-end: 100px;
+  margin-block-end: 100px;
 }
 
 .achievements-block-btn {
@@ -301,7 +301,7 @@
   }
 
   .achievements {
-    padding-block-end: 60px;
+    margin-block-end: 60px;
   }
 
   .flex-container {

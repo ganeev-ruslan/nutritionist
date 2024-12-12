@@ -1,53 +1,34 @@
-let swiper = new Swiper(".gallery-swiper", {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  pagination: {
-    el: ".gallery-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".gallery-btn_next",
-    prevEl: ".gallery-btn_prev",
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1274: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-  },
-});
+document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('.btn-command');
+  const imageContainers = document.querySelectorAll('.cards');
 
-document.addEventListener("DOMContentLoaded", function () {
-  const monthlyButton = document.getElementById("monthly");
-  const yearlyButton = document.getElementById("yearly");
+  buttons.forEach(button => {
+      button.addEventListener('click', function() {
+          // Удаляем класс active у всех кнопок
+          buttons.forEach(btn => btn.classList.remove('active'));
+          // Добавляем класс active к текущей кнопке
+          this.classList.add('active');
 
-  monthlyButton.addEventListener("click", () => {
-    changeButtonColor(monthlyButton);
-    changeButtonColor(yearlyButton);
+          // Получаем категорию из data-атрибута
+          const category = this.getAttribute('data-category');
+
+          // Скрываем все контейнеры с изображениями и показываем только нужный
+          imageContainers.forEach(container => {
+              if (container.classList.contains(category)) {
+                  container.style.display = 'flex'; // Показываем контейнер с нужной категорией
+              } else {
+                  container.style.display = 'none'; // Скрываем остальные
+              }
+          });
+      });
   });
 
-  yearlyButton.addEventListener("click", () => {
-    changeButtonColor(yearlyButton);
-    changeButtonColor(monthlyButton);
-  });
-
-  function changeButtonColor(button) {
-    if (button.classList.contains("monthly_color")) {
-      button.classList.remove("monthly_color");
-      button.classList.add("yearly_color");
-    } else {
-      button.classList.remove("yearly_color");
-      button.classList.add("monthly_color");
-    }
-  }
+  // Инициализация: показываем первый контейнер и устанавливаем первую кнопку как активную
+  // Эта часть кода больше не нужна, так как мы уже установили активное состояние в HTML
 });
 
-// анимация при переходе на страницу
+
+
+
+
+

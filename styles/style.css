@@ -436,7 +436,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, auto);
+  /* grid-template-rows: repeat(3, auto); */
   gap: 20px;
 }
 .block {
@@ -470,7 +470,7 @@ body {
 }
 
 .features {
-  padding-block-end: 100px;
+  margin-block-end: 100px;
 }
 
 /* features end */
@@ -665,21 +665,21 @@ body {
 /* our_testimonials END*/
 
 /* Our Pricing Start */
-.button_switch_block {
+/* .button_switch_block {
   display: flex;
   flex-direction: column;
   gap: 40px;
-}
+} */
 
-.button_switch {
+/* .button_switch {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
-}
+} */
 
-.monthly_color {
+/* .monthly_color {
   color: white;
   background-color: #234338;
   padding: 10px 24px;
@@ -697,7 +697,15 @@ body {
   transition: background-color 0.4s ease;
 }
 
-.btn {
+/* .btn {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 14px;
+  cursor: pointer;
+} */ 
+
+.btn-txt {
   font-family: "Urbanist", sans-serif;
   font-weight: 600;
   line-height: 1.5;
@@ -706,9 +714,39 @@ body {
 }
 
 .button_switch_click {
+  display: flex;
+  justify-content: center;
   border: 1px solid #dcf1a7;
   border-radius: 8px;
   padding: 10px;
+  gap: 10px;
+}
+.block-command {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.btn-command {
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+.btn-command.active {
+  background-color: #2c5446;
+  border: 1px solid #356554;
+  color: white;
+  border-radius: 6px;
+}
+
+
+
+.block-command-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .cards {
@@ -953,6 +991,11 @@ html {
 
   .block-menu-nav {
     display: none;
+  }
+
+  .features {
+    margin-block-end: 50px;
+
   }
 }
  

@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Команда</title>
     <link rel="stylesheet" href="../fonts/stylesheet.css" />
-    <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/team.css" />
     <link rel="stylesheet" href="../styles/process.css" />
+    <link rel="stylesheet" href="../styles/price.css" />
     <link rel="icon" href="../icon/favicon.ico" sizes="any" />
     <link rel="icon" href="../icon/android-icon-192x192.png" />
     <link rel="icon" href="../icon/android-icon-512x512.png" />
@@ -101,7 +103,210 @@
       </div>
     </header>
 
-    
+    <div class="process-block container">
+      <div class="background-crosses">
+        <div class="logo-team-img">
+          <img
+            width="68"
+            height="68"
+            src="../svg/logo-team.svg"
+            alt="логотип"
+          />
+        </div>
+        <div class="command-description">
+          <h1 class="command-title">Наше ценообразование</h1>
+          <p class="command-paragraph">
+            Мы предлагаем гибкие варианты оплаты, чтобы удовлетворить ваши
+            уникальные потребности и бюджет. Наша цель – предоставить вам
+            исключительное индивидуальное сопровождение по питанию, доступное и
+            адаптированное под ваши нужды. Выберите один из трех наших планов
+            ниже и сделайте первый шаг к более здоровому образу жизни.
+          </p>
+        </div>
+      </div>
+      <div>
+        <!-- блок с кнопками  -->
+        <div class="block-command-gap">
+          <div class="block-command-price">
+            <div class="button_switch_click">
+              <button
+                type="button"
+                class="btn-command btn-txt-price active"
+                data-category="monthly"
+              >
+                Ежемесячно
+              </button>
+              <button
+                type="button"
+                class="btn-command btn-txt-price"
+                data-category="annually"
+              >
+                Ежегодно
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <div class="carousel-manager">
+              <div class="cards monthly" style="display: flex">
+                <div class="card">
+                  <div>
+                    <h3>Базовый план</h3>
+                    <p>Скидка до 20% на первый месяц</p>
+                  </div>
+
+                  <div class="card_block_paragraph-price">
+                      <p>
+                        Персональный план питания, разработанный с учетом ваших целей и предпочтений в еде
+                      </p>
+                      <p>
+                        Доступ к нашему мобильному приложению для удобного отслеживания приемов пищи и мониторинга прогресса
+                      </p>
+                      <p>
+                        Поддержка по электронной почте для решения ваших вопросов и проблем
+                      </p>
+                      <p>
+                        Регулярные встречи с персональным диетологом для проверки вашего прогресса и предоставления рекомендаций.
+                      </p>
+                    
+                  </div>
+                  <div class="card_price">
+                    <div class="card_price__block">
+                      <p><span class="price">₽4.999</span>/месяц</p>
+                    </div>
+                    <button type="button" class="choose_button btn">
+                      Выбрать
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <h3>Премиум план</h3>
+                    <p>Скидка до 25% на первый месяц</p>
+                  </div>
+
+                  <div class="card_block_paragraph">
+                    <p>
+                      Повысьте уровень заботы о себе с нашим Премиум планом. К
+                      возможностям базового плана добавьте персональные
+                      видеоконференции с экспертами, ускоренную обратную связь и
+                      специально подобранные рецепты.
+                    </p>
+                  </div>
+                  <div class="card_price">
+                    <div class="card_price__block">
+                      <p><span class="price">₽7.899</span>/месяц</p>
+                    </div>
+                    <button type="button" class="choose_button btn">
+                      Выбрать
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <h3>Ультима план</h3>
+                    <p>Скидка до 35% на первый месяц</p>
+                  </div>
+
+                  <div class="card_block_paragraph">
+                    <p>
+                      Максимально раскройте потенциал своего здоровья с планом
+                      Ультима. Пользуйтесь всеми преимуществами Премиум плана,
+                      плюс круглосуточный чат-поддержка и участие в закрытых
+                      вебинарах.
+                    </p>
+                  </div>
+                  <div class="card_price">
+                    <div class="card_price__block">
+                      <p><span class="price">₽9.999</span>/месяц</p>
+                    </div>
+                    <button type="button" class="choose_button btn">
+                      Выбрать
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="cards annually" style="display: none">
+                <div class="card">
+                  <div>
+                    <h3>Базовый план</h3>
+                    <p>Скидка до 50% на годовой план</p>
+                  </div>
+
+                  <div class="card_block_paragraph">
+                    <p>
+                      Начните ваше путешествие к здоровью с нашим Базовым
+                      планом. Он включает в себя индивидуальное наставничество
+                      по питанию, доступ к нашему приложению, помощь в
+                      планировании питания и поддержку по электронной почте.
+                    </p>
+                  </div>
+                  <div class="card_price">
+                    <div class="card_price__block">
+                      <p><span class="price">₽29.399</span>/год</p>
+                    </div>
+                    <button type="button" class="choose_button btn">
+                      Выбрать
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <h3>Премиум план</h3>
+                    <p>Скидка до 50% на годовой план</p>
+                  </div>
+
+                  <div class="card_block_paragraph">
+                    <p>
+                      Перейдите на наш премиальный план для доступа к
+                      расширенным функциям. Кроме того, помимо базового плана,
+                      вы получите видеоконсультации, приоритетную поддержку и
+                      персонализированные рекомендации по рецептам.
+                    </p>
+                  </div>
+                  <div class="card_price">
+                    <div class="card_price__block">
+                      <p><span class="price">₽47.999</span>/год</p>
+                    </div>
+                    <button type="button" class="choose_button btn">
+                      Выбрать
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <h3>Ультима план</h3>
+                    <p>Скидка до 50% на годовой план</p>
+                  </div>
+
+                  <div class="card_block_paragraph">
+                    <p>
+                      Получите все преимущества персонализированного
+                      наставничества по питанию с нашим планом Ультима.
+                      Наслаждайтесь всеми возможностями премиального плана, а
+                      также поддержкой чата 24/7 и эксклюзивными семинарами.
+                    </p>
+                  </div>
+                  <div class="card_price">
+                    <div class="card_price__block">
+                      <p><span class="price">₽59.999</span>/год</p>
+                    </div>
+                    <button type="button" class="choose_button btn">
+                      Выбрать
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Другие категории изображений -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="footer_block container">
@@ -184,6 +389,7 @@
       </div>
     </footer>
     <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/script.js"></script>
     <script src="../js/switch_pages.js"></script>
   </body>
 </html>

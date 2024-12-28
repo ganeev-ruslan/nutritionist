@@ -1,22 +1,258 @@
-.block-command-price{
-    display: flex;
-    justify-content: center;
+.block-command-price {
+  display: flex;
+  justify-content: center;
 }
 
 .btn-txt-price {
-    font-family: "Urbanist", sans-serif;
-    font-weight: 600;
-    line-height: 1.5;
-    font-size: 14px;
-    cursor: pointer;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .card_block_paragraph-price {
-    display: flex;
-    flex-direction: column;
-    background-color: #EEF8D3;
+  display: flex;
+  flex-direction: column;
+  background-color: #eef8d3;
+  border: 1px solid #dcf1a7;
+  margin: 0;
+  border-radius: 8px;
+}
+
+.card_block_paragraph-last {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cards {
+  align-items: flex-start;
 }
 
 .card_block_paragraph-price p {
-    padding: 16px 20px;
+  padding: 16px 20px;
+  border-bottom: 1px solid #dcf1a7;
+}
+.premium-plan {
+  background-color: #234338;
+  border-radius: 8px;
+}
+.premium-plan p {
+  padding: 16px 20px;
+  color: #ffffff;
+}
+
+.card_block_paragraph-price p:last-child {
+  border-bottom: none;
+}
+
+/* свайп */
+
+.price-grid-block {
+  position: relative;
+}
+
+.price-grid-container {
+  border: 1px solid #e5f5bd;
+  border-radius: 12px;
+  background-color: #f6fbe9;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.price-grid {
+  display: grid;
+  padding: 30px;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  min-width: 600px;
+}
+
+.features-plan-one {
+  display: flex;
+  width: 430px;
+  height: 62px;
+  padding: 20px;
+  background: #234338;
+  margin: 20px 20px 0px 0px;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.features-plan {
+  display: flex;
+  margin: 20px 20px 0px 20px;
+  height: 62px;
+  width: 176px;
+  background: #234338;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.features-plan-block {
+  display: flex;
+  justify-content: center;
+}
+
+.features-plan-paragraph {
+  color: white;
+  font-size: 20px;
+}
+
+.left-block-features {
+  display: flex;
+  height: 112px;
+  padding-left: 20px;
+  align-items: center;
+}
+
+.right-block-features {
+  display: flex;
+  height: 112px;
+  align-items: center;
+  justify-content: center;
+}
+
+.features-plan-block,
+.right-block-features {
+  border-left: 1px solid #dcf1a7;
+}
+.border-bottom-features {
+  border-bottom: 1px solid #dcf1a7;
+}
+
+.faq-block {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-block-end: 100px;
+}
+
+.questions-click {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 22px 0px 8px 0px;
+}
+
+.paragraph {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.show {
+  max-height: 300px; /* Вы можете задать нужную высоту */
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s ease-in-out;
+}
+
+.questions-click button {
+  display: flex;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.questions-click h3{
+    padding-inline-end: 20px;
+}
+
+.faq_questions {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+  border: 1px solid #dcf1a7;
+  border-radius: 12px;
+  background-color: #f6fbe9;
+}
+
+.faq-block_questions {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.question-logo-img {
+  width: 100%;
+  width: 100px;
+  object-fit: cover;
+}
+
+.question-img-block {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dcf1a7;
+  border-radius: 12px;
+  background-color: #f6fbe9;
+  height: 435px;
+}
+
+.question-gap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Для Webkit-браузеров (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Ширина полосы прокрутки */
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Цвет фона полосы прокрутки */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbea7b; /* Цвет самой полосы прокрутки */
+  border-radius: 10px; /* Закругление углов полосы прокрутки */
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b2f30d; /* Цвет полосы прокрутки при наведении */
+}
+
+@media (width < 1150px) {
+  .cards {
+    align-items: center;
+  }
+}
+
+@media (width < 1050px) {
+    .faq-block_questions {
+        grid-template-columns: none;
+    }
+}
+
+@media (width < 775px){
+    .process-block{
+        margin-block-start: 60px;
+        gap: 60px;
+    }
+
+    .faq-block{
+        margin-block-end: 60px;
+    }
 }

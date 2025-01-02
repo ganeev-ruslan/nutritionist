@@ -1,18 +1,140 @@
 .weight-loss {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 .healthy-eating-img {
-    width: 100%;
-    object-fit: cover;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
-
 
 .block-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 30px;
+  border-radius: 12px;
 }
+
+.block-grid_gap {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.ind-descripti_block {
+  display: flex;
+  flex-direction: column;
+  
+  gap: 20px;
+}
+
+.ind-descripti_block p{
+  padding: 0px 20px;
+}
+
+.advice-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.command-title-advice {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #262626;
+  font-size: clamp(1.25rem, 1.1982rem + 0.221vw, 1.375rem);
+}
+
+.advice-block_gap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.paragraph-number {
+  color: #427b67;
+  font-weight: 700;
+}
+
+.advice-block {
+  background: #f6fbe9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.advice-block_gap {
+  background-color: #eef8d3;
+  border: 1px solid #e5f5bd;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.healthy-eating_block {
+  display: flex;
+}
+
+.fixed-button {
+  position: fixed;
+  bottom: 40px; /* Расстояние от нижнего края окна */
+  right: 60px; /* Расстояние от правого края окна */
+  z-index: 1000; /* Обеспечивает отображение поверх других элементов */
+  padding: 5px 10px;
+  background-color: #e1ecc43b;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.fixed-button a {
+  text-decoration: none;
+  color: #D3EE91;
+}
+
+.fixed-button:hover {
+  opacity: 0.9;
+}
+
+@media (width < 1136px) {
+  .block-grid {
+    grid-template-columns: none;
+  }
+
+  .healthy-eating_block {
+    justify-content: center;
+  }
+
+  .healthy-eating-img{
+    max-width: 500px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .ind-descripti_block p{
+    text-align: center;
+  }
+}
+
+@media(width < 665px) {
+  .fixed-button{
+    right: 8px;
+  }
+}
+
+@media (width < 891px) {
+  .weight-loss {
+    gap: 60px;
+  }
+
+  .block-grid_gap {
+    gap: 40px;
+  }
+
+}
+
+

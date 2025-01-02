@@ -1,0 +1,46 @@
+.portion_control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.portion_control h2 {
+    font-size: clamp(1.375rem, 1.3232rem + 0.221vw, 1.5rem);
+    font-weight: 500;
+}
+
+.about-portions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-portions p {
+    max-width: 700px;
+}
+
+.about-portions h3 {
+    font-style: italic;
+}
+
+.circle-bullets {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+
+.circle-bullets-txt {
+    font-family: 'Urbanist', sans-serif;
+    font-size: clamp(0.875rem, 0.8232rem + 0.221vw, 1rem);
+    font-weight: 500;
+    line-height: 1.5;
+    color: #333333;
+}
+
+
+
+
+
+

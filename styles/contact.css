@@ -1,0 +1,16 @@
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    background: #285042;
+}
+ 
+.contact_form {
+    display: flex;
+    gap: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}

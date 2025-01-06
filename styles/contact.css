@@ -1,16 +1,141 @@
 .contact_info {
-    display: flex;
-    flex-direction: column;
-    background: #285042;
-}
- 
-.contact_form {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  background: #285042;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+.contact_form {
+  display: flex;
+  gap: 40px;
+  background-color: #f6fbe9;
+  border-radius: 12px;
+  border: 1px solid #dcf1a7;
+  padding: 60px;
+  margin-block-end: 100px;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.entry_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.data-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.data-entry-message {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.data-entry-message p {
+  text-align: right;
+}
+
+.error {
+  font-family: "Urbanist", sans-serif;
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#application-form textarea {
+  resize: none;
+  min-height: 135px;
+  padding: 20px;
+  border: 1px solid #dcf1a7;
+  background-color: #eef8d3;
+  border-radius: 4px;
+}
+
+#application-form input {
+  border: 1px solid #dcf1a7;
+  background-color: #eef8d3;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+#application-form input:focus,
+#application-form textarea:focus {
+  outline: none;
+}
+
+#application-form label {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #4c4c4c;
+}
+
+#application-form button {
+  padding: 14px 20px;
+  background-color: #dcf1a7;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.send-message {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.data_btn_message {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media(width < 1185px){
+    .contact_form{
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .entry_form {
+        grid-template-columns: none;
+    }
+}
+
+@media(width < 993px) {
+    .map {
+        height: 500px;
+    }
+
+    .forms {
+        justify-content: center;
+    }
+
+    .contact_form {
+        flex-direction: column;
+    }
+
+    .map {
+        height: 300px;
+    }
 }

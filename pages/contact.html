@@ -5,16 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Контакты</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+   
     <link rel="stylesheet" href="../fonts/stylesheet.css" />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/team.css" />
     <link rel="stylesheet" href="../styles/about.css" />
-    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/contact.css" />
     <link rel="icon" href="../icon/favicon.ico" sizes="any" />
     <link rel="icon" href="../icon/android-icon-192x192.png" />
     <link rel="icon" href="../icon/android-icon-512x512.png" />
@@ -22,6 +19,7 @@
     <link rel="icon" href="../icon/favicon-32x32.png" />
     <link rel="apple-touch-icon" href="../icon/apple-touch-icon-57x57.png" />
     <link rel="icon" href="../svg/Logo.svg" type="image/svg+xml" />
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=d35fcd23-5f53-4cd7-b621-64a9a3bff558" type="text/javascript"></script>
   </head>
   <body>
     <header class="header">
@@ -130,7 +128,11 @@
                 <span>nutritionist@yandex.ru</span>
               </a>
               <div class="social_media">
-                <a class="networking-button"  target="_blank" href="https://www.instagram.com/ruslan_ganeev_rus/profilecard/?igsh=MTlwMXhseG43ZWFz">
+                <a
+                  class="networking-button"
+                  target="_blank"
+                  href="https://www.instagram.com/ruslan_ganeev_rus/profilecard/?igsh=MTlwMXhseG43ZWFz"
+                >
                   <img src="../icon/insta.svg" alt="инстаграм" />
                 </a>
                 <a class="networking-button" target="_blank" href="#">
@@ -172,15 +174,13 @@
                 </li>
 
                 <li>
-                    <a href="./contact.html">Контакты</a>
+                  <a href="./contact.html">Контакты</a>
                 </li>
               </ul>
             </nav>
           </div>
         </div>
       </div>
-
-
 
       <div class="container">
         <div>
@@ -194,43 +194,112 @@
               />
             </div>
             <div class="command-description">
-              <h1 class="command-title">
-                Свяжитесь с нами
-              </h1>
+              <h1 class="command-title">Свяжитесь с нами</h1>
               <p class="command-paragraph">
-                Ваше мнение, вопросы и обращения для нас очень важны. Наша команда всегда готова помочь вам и поддержать на пути к сбалансированному питанию. Обращайтесь к нам любым удобным для вас способом – мы рады будем вам помочь!
+                Ваше мнение, вопросы и обращения для нас очень важны. Наша
+                команда всегда готова помочь вам и поддержать на пути к
+                сбалансированному питанию. Обращайтесь к нам любым удобным для
+                вас способом – мы рады будем вам помочь!
               </p>
             </div>
           </div>
 
           <div class="block-command">
             <div class="header_bottom__block">
-                <a href="tel:79261481181" class="contact_info">
-                  <img src="../icon/Icon-phone.svg" width="20" height="20" alt="телефон">
-                  <span class="color_text">+7 (926) 148 11 81</span>
-                </a>
-                <a href="mailto:nutritionist@yandex.ru" class="contact_info">
-                  <img src="../icon/mail.svg" width="20" height="20" alt="почта">
-                  <span class="color_text">nutritionist@yandex.ru</span>
-                </a>
-    
-                <a href="#" class="contact_info">
-                  <img src="../icon/Icon-map.svg" width="20" height="20" alt="карта">
-                  <p class="color_text">найти нас на карте</p>
-                </a>
-              </div>
-         
+              <a href="tel:79261481181" class="contact_info">
+                <img
+                  src="../icon/Icon-phone.svg"
+                  width="20"
+                  height="20"
+                  alt="телефон"
+                />
+                <span class="color_text">+7 (926) 148 11 81</span>
+              </a>
+              <a href="mailto:nutritionist@yandex.ru" class="contact_info">
+                <img
+                  src="../icon/mail.svg"
+                  width="20"
+                  height="20"
+                  alt="почта"
+                />
+                <span class="color_text">nutritionist@yandex.ru</span>
+              </a>
+
+              <a target="_blank" href="https://yandex.ru/maps/213/moscow/?from=api-maps&ll=37.613072%2C55.744450&mode=routes&origin=jsapi_2_1_79&rtext=~55.744450%2C37.613072&rtt=pd&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DIgoNyXMWQhVR-l5C&z=12" class="contact_info">
+                <img
+                  src="../icon/Icon-map.svg"
+                  width="20"
+                  height="20"
+                  alt="карта"
+                />
+                <p class="color_text">найти нас на карте</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
     <div class="container">
-        <div class="contact_form">
-            <div class="form">dgdgdgd</div>
-            <div class="form">dhdhdhd</div>
-        </div>
+      <div class="contact_form">
+        <div class="forms">
+          <!-- форма отправки  -->
+           <div></div>
+          <form action="#" method="post" id="application-form" novalidate>
+            <div class="entry_form">
+          
+               <div class="data-entry">
+                <label for="name">Имя:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Введите имя"
+              />
+               </div>
+              
 
+          
+               <div class="data-entry">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Введите email"
+                />
+               </div>
+            </div>
+
+            <!-- поле для ввода нлмера телефона  -->
+             <div class="data-entry-message">
+             <label for="phone">Телефон:</label>
+             <input type="tel" id="phone" name="phone" pattern="\+[0-9]{10,15}" required placeholder="+7 (XXX) XXX-XX-XX">
+            </div>
+
+            <!-- Текстовое поле для сообщения  -->
+            <div class="data_btn_message">
+                <div class="data-entry-message">
+                    <label for="message">Сообщение:</label>
+                    <textarea name="message" id="message" maxlength="250" required placeholder="Введите сообщение"></textarea>
+                    <p>Max 250 симв.</p>
+                </div>
+             
+                <!-- кнопка отправки  -->
+                 <button type="submit" class="send-message">
+                    Отправить сообщение
+                 </button>
+    
+
+            </div>
+          </form>
+        </div>
+        <div class="forms">
+            <div class="map" id="yandex-map"></div>
+        </div>
+      </div>
     </div>
 
     <div class="achievements container">
@@ -239,12 +308,9 @@
           <img src="../images/path2.svg" alt="Зиг-Заг" />
         </div>
         <div class="achievements-block-btn">
-          <h3>Присоединяйся к нашей команде</h3>
+          <h3>Готовы начать путь к улучшению своего здоровья и благополучия?</h3>
           <p class="achievements-block-prg">
-            Мы всегда рады талантливым людям, которые стремятся внести свой
-            вклад и изменить мир к лучшему. Узнай больше о наших карьерных
-            возможностях и стань частью нашего движения за здоровье и
-            благополучие.
+            Присоединяйтесь к нам в «Нутрициолог» и позвольте нам провести вас по пути к более здоровому и счастливому образу жизни.
           </p>
         </div>
         <div class="achievements-btn-pos">
@@ -341,10 +407,9 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../js/fslightbox.js"></script>
+
     <script src="../js/mobile-menu.js"></script>
-    <script src="../js/swiper.js"></script>
+    <script src="../js/contact.js"></script>
     <script src="../js/switch_pages.js"></script>
     <script src="../js/jquery-3.7.1.min.js"></script>
   </body>

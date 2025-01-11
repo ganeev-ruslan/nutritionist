@@ -882,6 +882,87 @@ html {
   scroll-behavior: smooth;
 }
 
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition:  opacity .4s, visibility .4s;
+}
+
+.modal__box {
+  position: relative;
+  margin: 30px 15px;
+  gap: 20px;
+  max-width: 900px;
+  padding: 30px;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0px 0px 17px -7px rgba(34, 80, 56, 0.2);
+  transform: scale(0);
+  transition: transform .8s;
+}
+
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal.open .modal__box {
+  transform: scale(1);
+}
+
+
+.modal-close-btn {
+  position: absolute;
+  display: flex;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal-close-btn svg path {
+  transition: fill .4s;
+}
+
+.modal-close-btn:hover svg path{
+  fill: #c3ee59;
+}
+
+.modal-close-btn:active svg path {
+  fill: #b2f40b;
+}
+
+
+.open-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #a8e707;
+  font-weight: 600;
+
+}
+
+.open-button {
+  transition: color .4s;
+}
+
+.open-button:hover {
+  color: #234338;
+}
+
 
 
 /* footer End */
@@ -980,7 +1061,6 @@ html {
   .menu-nav ul {
     flex-wrap: wrap;
     row-gap: 20px;
-
 
 }
 

@@ -101,7 +101,7 @@ function init() {
         hintContent: 'Диетолог',
         balloonContent: 'улица Серафимовича, 2'
     }, {
-        preset: 'islands#greenIcon'
+        
     });
     myMap.geoObjects.add(myPlacemark);
 

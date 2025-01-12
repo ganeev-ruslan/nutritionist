@@ -986,6 +986,25 @@ html {
 }
 
 
+.circle-bullets {
+  list-style-type: circle;
+  padding-left: 20px;
+
+}
+
+.circle-bullets-txt span {
+  font-weight: 600;
+}
+
+.circle-bullets-txt {
+  font-family: 'Urbanist', sans-serif;
+  font-size: clamp(0.875rem, 0.8232rem + 0.221vw, 1rem);
+  font-weight: 500;
+  line-height: 1.5;
+  color: #333333;
+}
+
+
 /* footer End */
 
 @media (width < 1275px) {

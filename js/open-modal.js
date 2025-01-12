@@ -61,7 +61,7 @@ document.querySelector("#my-modal .modal__box").addEventListener('click', event 
     event._isClickWithInModal = true;
 });
 
-document.getElementById("my-modal").addEventListener("click", event => {
+document.getElementById("my-modal-1").addEventListener("click", event => {
     if (event._isClickWithInModal) return;
     event.currentTarget.classList.remove('open')
 });

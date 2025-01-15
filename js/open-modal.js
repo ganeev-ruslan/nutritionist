@@ -143,7 +143,92 @@ document.getElementById("my-modal-3").addEventListener("click", event => {
 
 
 
+// function restoreSvgState() { 
+//     const svgContainers = document.querySelectorAll('.svg-container'); svgContainers.forEach(svgContainer => { 
+//         const id = svgContainer.dataset.id; 
+//         const savedColor = localStorage.getItem(id); 
+//         if (savedColor) { 
+//             svgContainer.style.fill = savedColor; 
+//         } 
+//     }); 
+// } 
+// function saveSvgState(button) { 
+//     const svgContainer = button.querySelector('.svg-container'); const id = svgContainer.dataset.id; 
+//     const currentFill = svgContainer.style.fill; 
+//     localStorage.setItem(id, currentFill); 
+// } 
+// document.addEventListener('DOMContentLoaded', () => { 
+//     restoreSvgState(); const buttons = document.querySelectorAll('.block_image'); 
+//     buttons.forEach(button => { 
+//         button.addEventListener('click', () => { 
+//             const svgContainer = button.querySelector('.svg-container'); 
+//             if (svgContainer.style.fill === 'red') { 
+//                 svgContainer.style.fill = 'white'; 
+//             } 
+//             else { 
+//                 svgContainer.style.fill = 'red'; 
+//             } 
+//             saveSvgState(button); 
+//         }); 
+//     }); 
+// });
 
 
 
 
+
+
+// Функция восстановления состояния SVG по локальному хранилищу
+function restoreSvgState() {
+    // Находим все контейнеры SVG
+    const svgContainers = document.querySelectorAll('.svg-container, .svg-container_2');
+  
+    svgContainers.forEach(svgContainer => {
+      const id = svgContainer.dataset.id;
+      const savedColor = localStorage.getItem(id);
+      
+      if (savedColor) {
+        svgContainer.style.fill = savedColor;
+      }
+    });
+  }
+  
+  // Функция сохранения текущего цвета SVG в локальное хранилище
+  function saveSvgState(button) {
+    const svgContainer = button.querySelector('.svg-container, .svg-container_2');
+    const id = svgContainer.dataset.id;
+    const currentFill = svgContainer.style.fill;
+    
+    localStorage.setItem(id, currentFill);
+  }
+  
+  // Обработчик клика по кнопке
+  document.addEventListener('DOMContentLoaded', () => {
+    restoreSvgState();
+  
+    const buttons = document.querySelectorAll('.block_image');
+  
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const svgContainer = button.querySelector('.svg-container, .svg-container_2');
+        
+        if (svgContainer.classList.contains('svg-container')) {
+          // Если это первый тип SVG (.svg-container)
+          if (svgContainer.style.fill === 'red') {
+            svgContainer.style.fill = 'white';
+          } else {
+            svgContainer.style.fill = 'red';
+          }
+        } else {
+          // Если это второй тип SVG (.svg-container_2)
+          if (svgContainer.style.fill === 'black') {
+            svgContainer.style.fill = 'white';
+          } else {
+            svgContainer.style.fill = 'black';
+          }
+        }
+        
+        saveSvgState(button);
+      });
+    });
+  });

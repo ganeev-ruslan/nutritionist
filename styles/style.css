@@ -531,6 +531,7 @@ body {
 
 .block_image:hover {
   background-color: #f3fbe0;
+  border: 1px solid #e1f9a8;
 }
 
 .block_article_image {

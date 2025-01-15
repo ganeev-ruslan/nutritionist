@@ -516,12 +516,14 @@ body {
 
 .block_image {
   display: flex;
+  border: none;
   width: 48px;
   height: 48px;
   background-color: #f6fbe9;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .block_article_image {
@@ -670,45 +672,7 @@ body {
 /* our_testimonials END*/
 
 /* Our Pricing Start */
-/* .button_switch_block {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-} */
 
-/* .button_switch {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-} */
-
-/* .monthly_color {
-  color: white;
-  background-color: #234338;
-  padding: 10px 24px;
-  border-radius: 6px;
-  border: none;
-  transition: background-color 0.4s ease;
-}
-
-.yearly_color {
-  color: black;
-  background-color: transparent;
-  padding: 10px 24px;
-  border-radius: 6px;
-  border: none;
-  transition: background-color 0.4s ease;
-}
-
-/* .btn {
-  font-family: "Urbanist", sans-serif;
-  font-weight: 600;
-  line-height: 1.5;
-  font-size: 14px;
-  cursor: pointer;
-} */ 
 
 .btn-txt {
   font-family: "Urbanist", sans-serif;
@@ -803,9 +767,7 @@ body {
   gap: 5px;
 }
 
-/* .card_block_paragraph {
-  height: 170px;
-} */
+
 
 /* Our Pricing End */
 
@@ -1005,6 +967,17 @@ html {
 }
 
 
+.svg-container,
+.svg-container_2 {
+  fill: white;
+
+}
+
+
+ 
+
+
+
 /* footer End */
 
 @media (width < 1275px) {
@@ -1159,6 +1132,19 @@ html {
   .block_article_title {
     align-items: flex-start;
   }
+}
+
+
+@media(width < 565px){
+  .modal__box{
+    padding: 40px 20px;
+  }
+
+  .advice-block {
+    padding: 10px;
+  }
+
+
 }
 
 @keyframes arrow-1 {

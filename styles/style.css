@@ -524,6 +524,13 @@ body {
   align-items: center;
   border-radius: 8px;
   cursor: pointer;
+
+}
+
+
+
+.block_image:hover {
+  background-color: #f3fbe0;
 }
 
 .block_article_image {
@@ -972,6 +979,9 @@ html {
   fill: white;
 
 }
+
+
+
 
 
  

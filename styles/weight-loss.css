@@ -28,7 +28,7 @@
 .ind-descripti_block {
   display: flex;
   flex-direction: column;
-  
+
   gap: 20px;
 }
 
@@ -40,6 +40,9 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background: #f6fbe9;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .command-title-advice {
@@ -54,6 +57,10 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+  background-color: #eef8d3;
+  border: 1px solid #e5f5bd;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .paragraph-number {
@@ -61,18 +68,8 @@
   font-weight: 700;
 }
 
-.advice-block {
-  background: #f6fbe9;
-  padding: 20px;
-  border-radius: 8px;
-}
 
-.advice-block_gap {
-  background-color: #eef8d3;
-  border: 1px solid #e5f5bd;
-  padding: 20px;
-  border-radius: 8px;
-}
+
 
 .healthy-eating_block {
   display: flex;

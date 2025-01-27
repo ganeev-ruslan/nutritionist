@@ -1,0 +1,16 @@
+.circle-bullets_2{
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.red-bullets::marker{
+    color: red;
+}
+
+.blue-bullets::marker {
+    color: #40E0D0;
+}
+
+.orange-bullets::marker{
+    color: orange;
+}

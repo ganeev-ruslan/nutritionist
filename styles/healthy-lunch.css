@@ -1,0 +1,11 @@
+.flex-food {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.advice-block_gap {
+    gap: 40px;
+}
+
